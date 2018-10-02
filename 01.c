@@ -5,20 +5,16 @@
 
 int main(void) {
 	
-	int op1, op2;
-	int sum, sub;
+	int A;
+	int time, second;
 	
-	printf("input integers :");
-	scanf("%i %i", &op1, &op2);
+	printf("Input the second :");
+	scanf("%i", &A);
 	
-	sum = op1 + op2;
-	sub = op1 - op2;
+	time = A/60;
+	second = A%60;
 	
-	printf("+ operation : %i\n", sum);
-	printf("- operation : %i\n", sub);
-	printf("* operation : %i\n", op1*op2);
-	printf("/ operation : %i\n", op1/op2);
-	printf("%% operation : %i\n", op1%op2);
+	printf("The time is %i : %i", time, second);
 	
 	return 0;
 }

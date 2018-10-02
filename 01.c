@@ -5,14 +5,20 @@
 
 int main(void) {
 	
-	int year;
+	int d;
+	int Hour, Time, sec;
 	int result;
 	
-	printf("Input the year :");
-	scanf("%d", &year);
+	printf("Input the second : ");
+	scanf("%d", &sec);
 	
-	result = (year%4==0) && (year%100 !=0) || (year%400==0);
+	Hour = sec/3600;
+	result = sec%3600;
+	Time = result/60;
+	sec = sec%60;
 	
-	printf("%d\n", result);
+	printf("The time is %d : %d : %d", Hour, Time, sec);
+	
+	return 0;
 	
 }
